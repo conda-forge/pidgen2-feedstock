@@ -27,7 +27,7 @@ requirements:
     - python >=3.6
     - scipy
     - uproot3
-    - uproot4
+    - uproot >=4
     - xrootd >=5.2
 
 test:
