@@ -1,5 +1,5 @@
 {% set name = "pidgen2" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pidgen2-{{ version }}.tar.gz
-  sha256: 83c2a9ccd20c4918a67a3dfca100a3f8008176fb21b481624226036a8c527bad
+  sha256: c53f795ad5587997709c80f3e7e6672e92df2661df8d5238b5d04ad69786a06a
 
 build:
   number: 0
