@@ -1,6 +1,5 @@
 {% set name = "pidgen2" %}
-{% set version = "0.3.6" %}
-
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,26 +7,27 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pidgen2-{{ version }}.tar.gz
-  sha256: cc29ba2df19c49bfeb2a2b92a0be598f375fed100005b79bf8716c1dfc8c6a59
+  sha256: 97b233d8b2ee00936c33143dedb165036c2faee110259c2c80db3e635c635ca9
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
+    - python >=3.6
+    - setuptools >=42
+    - wheel
     - pip
-    - python >=3.6
   run:
-    - jax
-    - matplotlib-base
-    - numpy
-    - pandas
     - python >=3.6
+    - numpy
     - scipy
-    - uproot3
-    - uproot >=4
+    - pandas
+    - matplotlib-base
+    - jax
+    - uproot <5,>=4.2
     - xrootd >=5.2
 
 test:
