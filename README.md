@@ -1,11 +1,11 @@
-About pidgen2
-=============
+About pidgen2-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pidgen2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gitlab.cern.ch/lhcb-rta/pidgen2
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pidgen2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for particle identification (PID) correction for LHCb detector
 
