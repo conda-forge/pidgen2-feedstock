@@ -29,6 +29,7 @@ requirements:
     - jax >=0.4
     - uproot >=5.3
     - xrootd >=5.2
+    - fsspec-xrootd
 
 test:
   imports:
