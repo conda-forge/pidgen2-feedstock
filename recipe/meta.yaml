@@ -17,19 +17,17 @@ build:
 requirements:
   host:
     - python >=3.7
-    - setuptools >=42
+    - setuptools =69
     - wheel
     - pip
   run:
     - python >=3.7
-    - numpy
-    - scipy
-    - pandas
-    - matplotlib-base
-    - jax >=0.4
-    - uproot <5.2
-    - xrootd >=5.2
-    - iminuit >=2
+    - numpy =1.26.4
+    - scipy =1.13.0
+    - pandas =2.2.2
+    - matplotlib-base 
+    - uproot =4.3.7
+    - xrootd =5.2
 
 test:
   imports:
