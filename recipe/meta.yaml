@@ -22,14 +22,12 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - numpy
+    - numpy <2
     - scipy
     - pandas
     - matplotlib-base
-    - jax >=0.4
     - uproot <5.2
-    - xrootd >=5.2
-    - iminuit >=2
+    - xrootd ==5.2
 
 test:
   imports:
