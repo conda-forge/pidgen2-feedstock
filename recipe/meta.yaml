@@ -21,13 +21,13 @@ requirements:
     - wheel
     - pip
   run:
-    - python >=3.7
-    - numpy <2
-    - scipy
-    - pandas
-    - matplotlib-base
-    - uproot <5.2
-    - xrootd ==5.2
+    - python >=3.12
+    - numpy >=1.26
+    - scipy >=1.14
+    - pandas >=2.2
+    - matplotlib >=3.9
+    - uproot ==5.4.2
+    - xrootd >=5.7
 
 test:
   imports:
