@@ -1,3 +1,4 @@
+{% set python_min = '3.12' %}
 {% set name = "pidgen2" %}
 {% set version = "0.3.21" %}
 
@@ -6,26 +7,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pidgen2-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pidgen2-{{ version }}.tar.gz
   sha256: f8ab2109111507cedffd883f024bf6f9a98b27cad019134862e684154a35493c
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools >=42
     - wheel
     - pip
   run:
-    - python >=3.12
+    - python >={{ python_min }}
     - numpy >=1.26
     - scipy >=1.14
     - pandas >=2.2
-    - matplotlib >=3.9
+    - matplotlib-base >=3.9
     - uproot ==5.4.2
     - xrootd >=5.7
     - fsspec-xrootd >=0.4
@@ -37,6 +38,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://gitlab.cern.ch/lhcb-rta/pidgen2
