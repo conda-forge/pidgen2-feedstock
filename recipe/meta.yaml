@@ -26,7 +26,7 @@ requirements:
     - numpy >=1.26
     - scipy >=1.14
     - pandas >=2.2
-    - matplotlib >=3.9
+    - matplotlib-base >=3.9
     - uproot ==5.4.2
     - xrootd >=5.7
     - fsspec-xrootd >=0.4
