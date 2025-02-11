@@ -1,6 +1,6 @@
-{% set python_min = '3.12' %}
+{% set python_min = "3.12" %}
 {% set name = "pidgen2" %}
-{% set version = "0.3.21" %}
+{% set version = "0.3.23" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pidgen2-{{ version }}.tar.gz
-  sha256: f8ab2109111507cedffd883f024bf6f9a98b27cad019134862e684154a35493c
+  sha256: 82a1b7f6e1aaf5126175fe2ab3e44f4ec10e261024592c3bb0f4a638b9467228
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
